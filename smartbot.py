@@ -23,10 +23,6 @@ article.parse()
 article.nlp()
 corpus = article.text
 
-# print the article text
-
-
-
 # Tokenization
 text = corpus
 sentence_list = nltk.sent_tokenize(text) # A list of sentences
@@ -100,4 +96,5 @@ while(True):
         if greeting_response(user_input) != None:
             print('Sarah Bot: ' + greeting_response(user_input))
         else:
+
             print('Sarah Bot: ' +bot_response(user_input))
