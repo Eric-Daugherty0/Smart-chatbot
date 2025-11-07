@@ -1,7 +1,6 @@
 # This is a smart chatbot program.
 
 # Import the libraries
-
 from newspaper import Article
 import random
 import string
@@ -98,3 +97,4 @@ while(True):
         else:
 
             print('Sarah Bot: ' +bot_response(user_input))
+
