@@ -84,8 +84,10 @@ def bot_response(user_input):
 # Start the chat
 print('Sarah Bot: I am Sarah Bot. I will answer your queries about Chronic Kidney Disease. If you want to exit type bye.')
 
+# Exit response for user
 exit_list = ['exit', 'see you later', 'bye', 'Bye', 'quit', 'break']
 
+# A loop to exit when user is done. This loop also generates the response to the user. 
 while(True):
     user_input = input()
     if user_input.lower() in exit_list:
@@ -95,6 +97,6 @@ while(True):
         if greeting_response(user_input) != None:
             print('Sarah Bot: ' + greeting_response(user_input))
         else:
-
             print('Sarah Bot: ' +bot_response(user_input))
+
 
